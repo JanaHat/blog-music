@@ -1,0 +1,93 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  /* color: rgb(255, 255, 255); */
+  /* color: #82204A; */
+  /* color: black; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+h2 {
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 20px 30px 20px 30px;
+  font-weight: bold;
+}
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 34px;
+  margin: 15px;
+  text-decoration: underline 3px solid;
+}
+h4 {
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-weight: regular;
+  color: black;
+}
+h5 {
+  margin-top: 70px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+h6 {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h7 {
+  color: #82204a;
+  font-weight: bold;
+  align-items: center;
+}
+
+.container .header a {
+  text-decoration: none;
+  /* color: white; */
+  color: #82204a;
+}
+
+.container .header a:hover {
+  color: #e8db7d;
+  /* text-decoration: underline; */
+}
+
+.container .header h1 a {
+  color: #82204a;
+}
+
+.container .header h1 a:hover {
+  text-decoration: none;
+  color: #82204a;
+}
+
+.post a {
+  text-decoration: none;
+  color: #82204a;
+}
+
+.post a:hover {
+  color: #e8db7d;
+  transition: 0.3s;
+}
+
+.post p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 3px;
+  text-align: left;
+}
