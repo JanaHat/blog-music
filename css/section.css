@@ -1,8 +1,0 @@
-.section {
-    grid-area: section;
-    display: flex;
-    background-color:rgb(255, 255, 255);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}

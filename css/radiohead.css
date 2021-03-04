@@ -13,7 +13,7 @@ p {
 }
 .writer span {
   padding: 5px;
-  color: #82204A;
+  color: #204e82;
   font-size: 20px;
 }
 
@@ -24,40 +24,81 @@ p span {
 }
 
 p a {
-  color: #82204A;
+  color: #204e82;
 }
 p a:hover {
-  color: rgb(45, 192, 192);
+  color:rgb(33, 184, 230);
   transition: 0.2s;
 }
 
+
 /* area of navigation and name of the website */
-.header {
+nav {
   display: inline-flex;
   grid-area: header;
-  background-color:#82204A;
+  background-color:#204e82;
   align-items: center;
   position: fixed;
   z-index: 10;
   width: 100%;
   height: 70px;
 }
-.nav {
+nav ul {
+  list-style-type: none;
   display: flex;
-  font-size: 14px;
+  font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: center;
   text-align: center;
-  
 }
-.header .nav a {
+nav ul li {
+  padding-right: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav a {
   color: white;
   font-weight: 400;
+  text-decoration: none;
+}
+nav .burger {
+  display: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+nav .burger div {
+  width: 36px;
+  height: 3px;
+  background-color: white;
+  margin: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+.nav-active {
+  transform: translateX(0%);
 }
 
 /* main area where the photo, article and info about author is*/
+.section {
+  grid-area: section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
 .main {
   grid-area: main;
   background-color: rgb(255, 255, 255);
@@ -82,14 +123,13 @@ figcaption {
   width: 350px;
   background-image: url(static/concert.jpg);
   background-size: cover;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   margin-top: 50px;
   border-radius: 2px;
 }
 .article {
   display: block;
   width: 350px;
-  margin-left: 30px;
   justify-content: center;
 }
 
@@ -98,11 +138,11 @@ figcaption {
   height: 30px;
 }
 .back a {
-  color: #82204A;
+  color: #204e82;
   text-decoration: none;
 }
 .back a:hover{
-  color: rgb(45, 192, 192);
+  color: rgb(33, 184, 230);
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -111,7 +151,11 @@ figcaption {
   margin-top: 100px;
   margin-bottom: 50px;
   padding-top: 20px;
-  border-top: 2px solid  #82204A;
+  border-top: 2px solid  #204e82;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
 }
 .card1 {
   height: 100px;
@@ -122,12 +166,12 @@ figcaption {
 }
 .card2 {
   height: 120px;
-  width: 300px;
+  width: 270px;
   text-align: left;
 }
 
 .card2 h8 {
-  color: #82204A;
+  color: #204e82;
   text-align: left;
   font-weight: bold;
   margin-left: 60px;
@@ -142,8 +186,35 @@ figcaption {
     grid-template-rows: 70px 150px 1fr 80px;
     grid-template-areas: 'header' 'section' 'main' 'footer';
   }
-  .nav {
-    padding-left: 0px;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  nav ul {
+    background-color: white;
+    color: #204e82;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+  }
+  nav ul li {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  nav ul li a {
+    color: #204e82;
+  }
+  nav .burger {
+    display: block;
   }
   h2 {
     margin-left: 10px;
@@ -157,6 +228,17 @@ figcaption {
     margin-right: 30px;
     margin-left: 10px;
     justify-content: center;
+  }
+  .footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+  .smedia {
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 }
 
