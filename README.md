@@ -6,4 +6,4 @@ I used grids and flexbox for more efficient code.
 It is fully responsive.
 
 You can view it here:
-https://affectionate-bardeen-e58cad.netlify.app
+https://musique-blog-janah.netlify.app
